@@ -1,4 +1,4 @@
-package com.designPatterns.singleton.eagerPattern;
+package com.designPatterns.creational.singleton.eagerPattern;
 
 //eager instantiation
 public class Eager {
@@ -7,8 +7,12 @@ public class Eager {
     private Eager() {
     }
 
-    public static Eager getObj() {
+    public static Eager getInstance() {
         return obj;
+    }
+
+    public void string() {
+        System.out.println("Hello java");
     }
 }
 

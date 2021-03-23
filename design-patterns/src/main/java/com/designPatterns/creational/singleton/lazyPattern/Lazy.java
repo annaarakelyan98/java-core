@@ -1,4 +1,4 @@
-package com.designPatterns.singleton.lazyPattern;
+package com.designPatterns.creational.singleton.lazyPattern;
 
 public class Lazy {
     private static Lazy obj;
