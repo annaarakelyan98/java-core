@@ -1,9 +1,9 @@
-package com.designPatterns.builder;
+package com.designPatterns.creational.builder;
 
 public class People {
     public static void main(String[] args) {
         Name name = new Name.Builder().name("Anna")
-                .surname("Arakeyan")
+                .surname("Arakelyan")
                 .build();
 
         Account account = new Account.Builder().name(name)
