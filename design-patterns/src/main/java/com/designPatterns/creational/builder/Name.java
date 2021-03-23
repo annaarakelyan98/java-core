@@ -1,4 +1,4 @@
-package com.designPatterns.builder;
+package com.designPatterns.creational.builder;
 
 import lombok.Getter;
 
