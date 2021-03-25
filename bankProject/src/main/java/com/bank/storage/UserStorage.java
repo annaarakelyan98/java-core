@@ -1,7 +1,6 @@
 package com.bank.storage;
 
 import com.bank.model.User;
-import com.bank.service.UserStorageService;
 import lombok.Getter;
 
 import java.util.ArrayList;

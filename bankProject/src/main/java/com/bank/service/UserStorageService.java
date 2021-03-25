@@ -2,6 +2,8 @@ package com.bank.service;
 
 import com.bank.model.User;
 
+import java.util.List;
+
 public interface UserStorageService {
     boolean add(User user);
 
@@ -9,5 +11,5 @@ public interface UserStorageService {
 
     boolean remove(User user);
 
-    void printAll();
+    List<User> printAll();
 }

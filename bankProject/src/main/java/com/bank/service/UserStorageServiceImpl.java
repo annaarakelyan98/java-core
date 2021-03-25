@@ -3,10 +3,12 @@ package com.bank.service;
 import com.bank.model.User;
 import com.bank.storage.UserStorage;
 
-public class UserStorageInterfaceImpl implements UserStorageService {
+import java.util.List;
+
+public class UserStorageServiceImpl implements UserStorageService {
     UserStorage userStorage;
 
-    public UserStorageInterfaceImpl(UserStorage userStorage1) {
+    public UserStorageServiceImpl(UserStorage userStorage1) {
         this.userStorage = userStorage1;
     }
 
@@ -35,20 +37,20 @@ public class UserStorageInterfaceImpl implements UserStorageService {
             if (u.getUsername().equals(name)) {
                 return u;
             }
-            return null;
         }
         return null;
     }
 
     @Override
     public boolean remove(User user) {
-       return userStorage.getStorage().remove(user);
+        return userStorage.getStorage().remove(user);
     }
 
     @Override
-    public void printAll() {
-        for (User user: userStorage.getStorage()){
+    public List<User> printAll() {
+        for (User user : userStorage.getStorage()) {
             System.out.println(user);
         }
+        return null;
     }
 }
