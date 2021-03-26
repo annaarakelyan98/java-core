@@ -71,8 +71,7 @@ public class UserOperationImpl implements UserOperation {
         if (user != null) {
             System.out.print("Enter name: ");
             name = scanner.nextLine();
-            System.out.print("Change username into: ");
-            user.setUsername(scanner.nextLine());
+            user.setName(name);
             user = userStorageService.get(user.getUsername());
         } else {
             System.out.println("Username not found!");
